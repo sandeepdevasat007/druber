@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.droidplanner.android:usb-serial-android:0.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/usb-serial-android-0.1.0.aar/04ba5c0a34be09e6a2bae261c335cd8e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/usb-serial-android-0.1.0.aar/04ba5c0a34be09e6a2bae261c335cd8e/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.droidplanner.android/usb-serial-android/0.1.0/599afbfeaed09ea98c5c3dd668fe2d4e2def22ec/usb-serial-android-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

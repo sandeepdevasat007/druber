@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:paddingBottom="13dp"
+    android:id="@+id/rl">
+
+    <TextView
+        android:id="@+id/projectId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:text="Project ID"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/projectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/projectId"
+        android:layout_alignStart="@+id/projectId"
+        android:layout_below="@+id/projectId"
+        android:textSize="17sp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
+        android:background="@color/transparent"
+        android:text="Designation" />
+
+
+    <TextView
+        android:id="@+id/missionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/missionId"
+        android:layout_alignRight="@+id/missionId"
+        android:layout_alignTop="@+id/projectName"
+        android:text="email@domain.com"
+        android:visibility="gone"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/missionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/missionName"
+        android:layout_marginEnd="27dp"
+        android:visibility="gone"
+        android:layout_marginRight="27dp"
+        android:text="Salary" />
+    <!--
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/designation"
+            android:layout_alignStart="@+id/designation"
+            android:layout_below="@+id/designation"
+            android:text="dob" />
+
+        <TextView
+            android:id="@+id/contactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/salary"
+            android:layout_alignRight="@+id/salary"
+            android:layout_below="@+id/designation"
+            android:text="contact" />
+    -->
+
+</RelativeLayout>

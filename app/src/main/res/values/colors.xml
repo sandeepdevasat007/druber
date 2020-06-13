@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#B3FFFFFF</color>
+    <color name="background_blue">#242d34</color>
+    <color name="dark_gray">#80000000</color>
+    <color name="medium_blue">#298080</color>
+
+
+    <color name="colorPrimary">#064760</color>
+    <color name="colorPrimaryDark">#90064760</color>
+    <color name="colorAccent">#ff5722</color>
+    <color name="colorOrange">#DC9F42</color>
+    <color name="colorSignup">#263178</color>
+    <color name="colorGreen">#5AB683</color>
+    <color name="colorBlue">#189AAA</color>
+    <color name="colorGrey">#999999</color>
+    <color name="colorMaroon">#845875</color>
+    <color name="colorLightBlue">#9675C6</color>
+    <color name="colorDarktGreen">#A9D314</color>
+    <color name="colorLightGreen">#80C73F</color>
+    <color name="black_overlay">#90000000</color>
+    <color name="colorLightWhite">#C5D5FC</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDarkCyan">#62B1F6</color>
+    <color name="colorDarkBlue">#04104B</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="colorGrid">#4D5357</color>
+    <color name="xyz_blue_color">#009FE3</color>
+    <color name="xyz_darkblue_color">#06428E</color>
+    <color name="xyz_btn_color">#9EC650</color>
+    <color name="boundingColor">#D4DE9F</color>
+    <color name="dronePathColor">#7DBB2A</color>
+    <color name="logo_color">#009FE3</color>
+    <color name="seekbar_color">#50000000</color>
+    <color name="backgroundAppBar">#A2C748</color>
+
+
+
+</resources>

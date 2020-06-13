@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iigo.library.CubeLoadingView
+        app:firstSideColor="@android:color/holo_orange_dark"
+        app:secondSideColor="@color/xyz_blue_color"
+        app:thirdSideColor="@color/xyz_btn_color"
+        app:fourthSideColor="@android:color/holo_purple"
+        android:layout_centerInParent="true"
+        android:layout_width="40dp"
+        android:id="@+id/cload"
+        android:layout_height="40dp"/>
+
+</RelativeLayout>

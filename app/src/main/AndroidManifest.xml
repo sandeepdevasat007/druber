@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dji.ux.druber">
+
+    <!-- DJI SDK need these permissions -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.usb.accessory"
+        android:required="true" />
+
+    <application
+        android:name="com.xyz.druber.flight.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/xyz"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- DJI SDK -->
+
+        <meta-data
+            android:name="com.dji.sdk.API_KEY"
+            android:value="6831f4202c0d9309a7975f9e" />
+
+        <!-- Here Maps -->
+        <meta-data android:name="com.here.android.maps.appid"
+                   android:value=""/>
+        <meta-data android:name="com.here.android.maps.apptoken"
+                   android:value=""/>
+        <meta-data android:name="com.here.android.maps.license.key"
+                   android:value=""/>
+
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:label="HereMapService"
+            android:process="global.Here.Map.Service.v3"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.here.android.mpa.service.MapService.v3" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDP7fYMV4N8YeEFLQugo216iVKQEkbBXy8"/>
+
+        <!-- AMaps -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value=""/>
+
+        <activity
+            android:name="com.xyz.druber.flight.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="druber"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xyz.druber.flight.FlightMapActivity"
+            android:label="Druber"
+            android:theme="@style/CustomAppBarTheme"
+            android:screenOrientation="sensorLandscape">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.xyz.druber.flight.reciever.OnDJIUSBAttachedReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.dji.accessory.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+        </receiver>
+
+        <activity
+            android:name="dji.sdk.sdkmanager.DJIAoaControllerActivity"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
+        </activity>
+
+        <activity
+            android:name="com.xyz.druber.flight.JobsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomAppTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.xyz.druber.flight.RegistrationActivity"
+            android:theme="@style/CustomAppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xyz.druber.flight.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xyz.druber.flight.SignUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.xyz.druber.flight.JobOptionsActivity"
+            android:screenOrientation="portrait"/>
+<!--
+        <activity
+            android:name=".PathMarkerActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name=".CheckListActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/CustomAppTheme">
+
+        </activity>
+        <activity android:name=".IconActivity">
+
+        </activity>
+-->
+        <activity android:name="com.xyz.druber.flight.SideMenuBaseActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.xyz.druber.flight.IntroActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.xyz.druber.flight.FlightPathsActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+    </application>
+
+</manifest>

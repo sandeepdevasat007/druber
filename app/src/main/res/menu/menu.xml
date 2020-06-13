@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/wifi"
+        android:icon="@drawable/bat_emp"
+        android:orderInCategory="1"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:orderInCategory="2"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/battery"
+        android:icon="@drawable/ic_battery"
+        android:orderInCategory="3"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/flight"
+        android:icon="@drawable/ic_access_locker_info"
+        android:orderInCategory="4"
+        android:title=""
+        app:showAsAction="always" />
+
+</menu>

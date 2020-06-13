@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight=".05"
+        android:text="@string/title_txt"
+        android:background="@color/white"
+        android:textSize="14sp"
+        android:paddingLeft="15dp"
+        android:gravity="bottom"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/chk_ln"
+        android:weightSum="1"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/connected_to_drone_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/checkimageselector"
+                android:text="@string/drone_not_connected"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/checkimageselector" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/switch_position_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/checkimageselector"
+                android:text="@string/switch_position"
+                android:drawableLeft="@drawable/checkimageselector" />
+
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/camera_is_ready_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/checkimageselector"
+                android:text="@string/camera_not_connected"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/checkimageselector" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/home_point_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/checkimageselector"
+                android:text="@string/home_point"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/checkimageselector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_marginRight="50dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/missoin_uploading_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/checkimageselector"
+                android:text="@string/mission_not_upload"
+                android:drawableLeft="@drawable/checkimageselector" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/calibration_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/checkimageselector"
+                android:text="@string/calibrated"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/checkimageselector" />
+
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/drone_storage_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/checkimageselector"
+                android:text="@string/drone_storage"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/checkimageselector" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/drone_gps_chk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/checkimageselector"
+                android:text="@string/drone_gps_no"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/checkimageselector" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.5"
+            android:background="@color/gray"
+            android:text="@string/cancel_txt"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".1" />
+-->
+        <Button
+            android:id="@+id/resolve_issues_btn"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="50dp"
+            android:layout_weight="1.5"
+            android:background="@color/colorLightGreen"
+            android:text="@string/resolve_txt"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="150dp"
+         android:id="@+id/ln_btn"
+         android:layout_marginBottom="@dimen/dp_20_in_sw320dp"
+         android:orientation="horizontal">
+
+         <Button
+             android:id="@+id/cancel_btn"
+             android:layout_width="0dp"
+             android:layout_height="45dp"
+             android:layout_weight=".4"
+             android:background="@color/black_overlay"
+             android:foreground="?attr/selectableItemBackgroundBorderless"
+             android:text="@string/cancel_txt"
+             android:textColor="@color/colorWhite"
+             android:textSize="12sp"
+             android:textStyle="bold" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight=".1" />
+
+         <Button
+             android:id="@+id/resolve_issues_btn"
+             android:layout_width="0dp"
+             android:layout_height="45dp"
+             android:layout_weight=".5"
+             android:background="@color/colorLightGreen"
+             android:foreground="?attr/selectableItemBackgroundBorderless"
+             android:text="@string/resolve_txt"
+             android:textColor="@color/colorWhite"
+             android:textSize="12sp"
+             android:textStyle="bold" />
+
+     </LinearLayout>-->
+</RelativeLayout>

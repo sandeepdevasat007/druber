@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.o3dr.android:dronekit-android:3.0.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dronekit-android-3.0.2.aar/bfd20196ec307f0c75fd833f0d769c76/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dronekit-android-3.0.2.aar/bfd20196ec307f0c75fd833f0d769c76/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dronekit-android-3.0.2.aar/bfd20196ec307f0c75fd833f0d769c76/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dronekit-android-3.0.2.aar/bfd20196ec307f0c75fd833f0d769c76/jars/libs/d2xx.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dronekit-android-3.0.2.aar/bfd20196ec307f0c75fd833f0d769c76/jars/libs/Mavlink.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.o3dr.android/dronekit-android/3.0.2/95402eb2a175fa06209eb6e5a333f2cf6f88d401/dronekit-android-3.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

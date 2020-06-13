@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <Button
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/xyz"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/b5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#fff"
+        android:text="DRUBER"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="60sp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/imageView"
+        android:textColor="@color/xyz_blue_color"/>
+
+    <TextView
+        android:id="@+id/b6"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"
+        android:text="UAV Management Platform"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/b5"
+        android:textColor="#009FE3"/>
+
+
+    <TextView
+        android:id="@+id/b2"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/b4"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/xyzlogoo"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+
+    <TextView
+            android:id="@+id/b4"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="Powered by"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/b5"
+            android:textColor="#06428E"/>
+
+    <!-- <TableRow
+         android:paddingTop="40dp"
+         android:layout_weight="1"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"/>
+ -->
+    <Button
+        android:id="@+id/complete_ui_widgets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/xyz_darkblue_color"
+        android:text="CONNECT"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/bt_customized_ui_widgets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_margin="10dp"
+        android:padding="14dp"
+        android:textColor="@color/background_blue"
+        android:visibility="gone"
+        android:text="Demo on Customized UI Widgets"/>
+    <Button
+        android:id="@+id/bt_map_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_margin="10dp"
+        android:padding="14dp"
+        android:visibility="gone"
+        android:textColor="@color/background_blue"
+        android:text="Map Widget Demo"/>
+
+    <TableRow
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <EditText
+        android:id="@+id/edittext_bridge_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        android:digits="0123456789.\n"
+        android:gravity="center"
+        android:hint="@string/wsbridge_ip"
+        android:imeOptions="actionDone"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="Version"/>
+</RelativeLayout>
